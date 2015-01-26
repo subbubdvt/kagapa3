@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>List View</title>
+	
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.1.1/jquery.mobile-1.1.1.min.js"></script>
+	
+	<style>
+		img.fullscreen {
+			max-height: 100%;
+			max-width: 100%;
+		}       
+</style>	
+</head>
+<body>
+
+<div data-role="page" id="photos"><!-- home page -->
+<header data-role="header">
+    <h1>ಕನ್ನಡ ಗಣಕ ಪರಿಷತ್ತು</h1>
+</header>
+
+<article data-role="content">
+    <!-- <ul data-role="listview" data-filter="true" data-theme="c"> -->
+    <ul data-role="listview" data-theme="c">
+        <li>
+            <a href="#img1">
+            <h1>ಚಿತ್ರ 1</h1>
+            <img src="./thumbnails/1.jpg" alt="ಚಿತ್ರ 1" />
+            <p>ಚಿತ್ರ 1ರ ವಿವರ</p>
+            </a>
+        </li>
+        <li>
+            <a href="#img2">
+            <h1>ಚಿತ್ರ 2</h1>
+            <img src="./thumbnails/2.jpg" alt="ಚಿತ್ರ 2" />
+            <p>ಚಿತ್ರ 2ರ ವಿವರ</p>
+            </a>
+        </li>
+    </ul>
+</article>
+
+<footer data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
+        <ul>
+            <li><a href="#" data-icon="home">ಮುಖಪುಟ</a></li>
+            <li><a href="#" data-icon="grid">ಚಿತ್ರಗಳು</a></li>
+            <li><a href="#" data-icon="info">ವಿವರಗಳು</a></li>
+        </ul>
+    </nav>
+</footer>
+</div><!-- home page -->
+
+<div data-role="page" id="img1" data-add-back-btn="true"><!-- tab 1 -->
+    <header data-role="header">
+        <h1>ಚಿತ್ರ 1</h1>
+    </header>
+    <img src="./images/1.jpg" class="fullscreen" alt="Pic 1" />
+	
+<footer data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
+        <ul>
+            <li><a href="#" data-icon="home">ಮುಖಪುಟ</a></li>
+            <li><a href="#" data-icon="grid">ಚಿತ್ರಗಳು</a></li>
+            <li><a href="#" data-icon="info">ವಿವರಗಳು</a></li>
+        </ul>
+    </nav>
+</footer>
+	
+</div><!-- tab 1 -->
+
+<div data-role="page" id="img2"  data-add-back-btn="true"><!-- tab 2 -->
+    <header data-role="header">
+        <h1>ಚಿತ್ರ 2</h1>
+    </header>
+    <img src="./images/2.jpg" class="fullscreen" alt="Pic 2" />
+	
+<footer data-role="footer" data-position="fixed">
+    <nav data-role="navbar">
+        <ul>
+            <li><a href="#" data-icon="home">ಮುಖಪುಟ</a></li>
+            <li><a href="#" data-icon="grid">ಚಿತ್ರಗಳು</a></li>
+            <li><a href="#" data-icon="info">ವಿವರಗಳು</a></li>
+        </ul>
+    </nav>
+</footer>
+	
+</div><!-- tab 2 -->
+
+
+
+</body>
+</html>
